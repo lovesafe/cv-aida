@@ -43,7 +43,7 @@
 /* ============== MEDIA QUERTES (MEDIUM DEVICE) ============== */
 @media screen and (max-width: 1024px) {
     #experience{
-        transform: translateY(-25%)
+        transform: translateY(0)
     }
 
     .experience__container {
