@@ -34,7 +34,7 @@
 /* ============== MEDIA QUERTES (MEDIUM DEVICE) ============== */
 @media screen and (max-width: 1024px) {
     #portfolio{
-        transform: translateY(10%)
+        transform: translateY(0)
     }
 
     .portfolio__container {
