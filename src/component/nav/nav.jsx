@@ -4,18 +4,19 @@ import {FaHome} from 'react-icons/fa'
 import {FaUser} from 'react-icons/fa'
 import {IoMdBookmarks} from 'react-icons/io'
 import {AiFillFile} from 'react-icons/ai'
-import {BsTelephone} from 'react-icons/bs';
-import {useState} from 'react'
+import {BsTelephone} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
-    const [activeNav, setActiveNav] = useState('#')
     return (
         <nav>
-            <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><FaHome/></a>
-            <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><FaUser/></a>
-            <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><IoMdBookmarks/></a>
-            <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><AiFillFile/></a>
-            <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BsTelephone/></a>
+            <ul>
+                <li><Link to='/'> <FaHome/> Home</Link></li>
+                <li><Link to='/about'> <FaUser/> Profile</Link></li>
+                <li><Link to='/experience'> <IoMdBookmarks/> Experience</Link></li>
+                <li><Link to='/portfolio'> <AiFillFile/> Portfolio</Link></li>
+                <li><Link to='/contact'> <BsTelephone/> Contact</Link></li>
+            </ul>
         </nav>
     )
 }

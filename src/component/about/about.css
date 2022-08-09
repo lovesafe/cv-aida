@@ -100,7 +100,7 @@
 /* ============== MEDIA QUERTES (SMALL DEVICE) ============== */
 @media screen and (max-width: 600px) {
     #about{
-        transform: translateY(-25%)
+        transform: translateY(0)
     }
 
     .about__me{
