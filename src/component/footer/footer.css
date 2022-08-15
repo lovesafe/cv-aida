@@ -55,7 +55,7 @@ footer a{
 /*============== MEDIA QUERIES (MEDIUM DEVICES) ============*/
 @media screen and (max-width: 1024px){
     #footer{
-        transform: translateY(-50%);
+        transform: translateY(50%);
         width: 100%;
     }
 }

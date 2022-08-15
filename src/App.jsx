@@ -6,7 +6,10 @@ import About from './component/about/about'
 import Experience from './component/experience/experience'
 import Portfolio from './component/portfolio/portfolio'
 import Contact from './component/contact/contact'
-import Footer from './component/footer/footer';
+import Footer from './component/footer/footer'
+import AppBar from './component/nav/appBar'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const App = () => {
 const [apa, setApa] = useState('Halloooo!')
@@ -17,10 +20,12 @@ const datas = {
   apa, setApa, salam, setSalam, job, setJob
 }
 
+const theme = useTheme();
+const matches = useMediaQuery(theme.breakpoints.up('sm')) 
     return (
       <Router>
         <>
-          <Nav/>
+          {matches ? <Nav/> : <AppBar />}
           <Routes >
             <Route exact path='/' element={<Header datas={datas}/>} />
             <Route exact path='/about' element={<About/>} /> 

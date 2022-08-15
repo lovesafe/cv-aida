@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import './nav.css'
 import {FaHome} from 'react-icons/fa'
 import {FaUser} from 'react-icons/fa'
@@ -11,11 +11,11 @@ const Nav = () => {
     return (
         <nav>
             <ul>
-                <li><Link to='/'> <FaHome/> Home</Link></li>
-                <li><Link to='/about'> <FaUser/> Profile</Link></li>
-                <li><Link to='/experience'> <IoMdBookmarks/> Experience</Link></li>
-                <li><Link to='/portfolio'> <AiFillFile/> Portfolio</Link></li>
-                <li><Link to='/contact'> <BsTelephone/> Contact</Link></li>
+                 <li><Link to='/'> <FaHome/> Home</Link></li>
+                 <li><Link to='/about'> <FaUser/> Profile</Link></li>
+                 <li><Link to='/experience'> <IoMdBookmarks/> Experience</Link></li>
+                 <li><Link to='/portfolio'> <AiFillFile/> Portfolio</Link></li>
+                 <li><Link to='/contact'> <BsTelephone/> Contact</Link></li>
             </ul>
         </nav>
     )
